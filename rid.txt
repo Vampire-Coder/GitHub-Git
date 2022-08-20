@@ -1,0 +1,87 @@
+								~~~~Notes on Git and GitHub~~~~
+
+#Git: Definition
+
+#GitHub: Definition
+
+#Introduce yourself to git:
+	1. git config --global user.name Ridoy
+	2. git config --global user.email sheakh35-2091@diu.edu.bd
+
+#Git add: 
+Git starting with command and details (untracted to stage):
+	1. for making the (.git) folder into your "Working Direcctory" use the git command-> "git init";
+	2. for checking the elements of a folder, the command is-> "ls";
+	3. for checking the hidden files from your terminal, the command is-> "ls -lart";
+	4. for creating any file into your "Working Directory", the command is->"touch filename with type (touch index.html)";
+	5. for seeing the current conditions of git, the command is->"git status";
+	6. for taking a single file into the "Stage", the command is->"git add filename with type (git add index.html)";
+	7. for taking all the files into the "Stage" the command is->"git add -A or git add --a";    ************
+	   for taking any folder with al it's files into the stage, the command is->"git add .";
+	8. for taking all the staged files to the untracked conditions, the command is->"git reset";
+	9. for taking any specific folder with all its files under the main working directory, at first you have to "cd folder name (cd css)",
+	   then you can use, the command-> "git add .";
+	10. for taking any file of any sub-folder, into the stage from the Working director, the command is->"git add foldername/filename (git add css/custom.css)";
+
+#Git Commit:
+stage to commit:
+
+	1. git commit -m "note where to changes"  (best way)
+
+#Git Checkout: 
+Returning deleted files (Condition: they must need to be in commit stage )
+
+	1. git cheackout index.html (this command is used for returning deleted codes of index.html)
+	2. git checkout -f (this command is used for taken back all the deleted files or folder)
+
+#Git Log: 
+Checking user info:
+
+	1.git log (Get the users information)
+	2.git log -p -1 (to check the last 1 commit, we use the -1 portion and if we want to see last 2/3 commit then we use -2/-3. It also shows,
+			 where the change has been done!) Press Q to make the terminal normal.
+
+
+#Git diff and Git diff --staged:
+Checking difference:
+
+	1. To compare between a local directory and the same staged file, the command is: "git diff";
+	2. To compare between recently/previously commit file and the same staged file, the command is: "git diff --staged";
+
+#Git rm:
+deleting staged file:
+
+	1. For deleting a staged file, the command is-> "git rm filename with type (git rm new.txt)".
+	   then an error message will be showed. to recover this stage the command is->"git rm new.txt -f".
+
+#Git Ignore:
+Creating (.gitignore) folder and put files to be ignored
+
+	1. touch .gitignore
+	2. app.js 	  (app.js file will be out of git tracking)
+	   img/   	  (img folder will be not tracked)
+	   name/info.html (here, name is the folder and info.html is the file of name folder. it wil not be tracked by the git)
+	   *.png	  (those files which have,[.png] extension will not be tracked by git)
+	   *jpg		  (those files which have,[.jpg] extension will not be tracked by git)
+
+#Git branch:
+	1. For checking how many branches are there and you are working in which branch, the command is:->"git branch";
+	2. For creating new branch, the command is:->"git branch branch_name (git branch mini)";
+	3. For shifting to your desire branch, the command is->"git checkout branch_name (git checkout mini)";
+	4. For creating and directly shift to the branch while creating, the command->"git ckeckout -b branch_name (git checkout -b main)";
+	5. For deleting any git branch locally, (git branch -d branch_name),
+	   For deleting any git branch remotely, (git push origin --delete remoteBranchName).
+	#Merge:
+		1. Merge from master, with other branch:->"git merge branch_name -m 'Comment'";
+
+#Remote:
+	1. For adding with remote(origin), the command is: 
+		 1. git branch -M main
+		 2. git remote add origin https://github.com/Vampire-Coder/Git-GitHub.git
+		 3. git push -u origin main
+	if face any problem while updating, then first 
+	`	1. fetch the file.(git fetch origin main)
+		2. pull the file. (git pull origin main)
+		3. push the the file.(git push origin main)
+
+https://github.com/Rakibuzzaman-Ridoy/Git---GitHub.git
