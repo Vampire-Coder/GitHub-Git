@@ -84,4 +84,3 @@ Creating (.gitignore) folder and put files to be ignored
 		2. pull the file. (git pull origin main)
 		3. push the the file.(git push origin main)
 
-https://github.com/Rakibuzzaman-Ridoy/Git---GitHub.git
